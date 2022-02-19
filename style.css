@@ -143,6 +143,9 @@ font-weight: bold;
 .movie-list-container{
     padding: 20px;
 }
+.movie-list-wrapper{
+    position: relative;
+}
 
 .movie-list{
     display: flex;
@@ -216,5 +219,15 @@ font-weight: bold;
     opacity: 0;
     transition: all 1s ease-in-out;
 
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgrey;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
