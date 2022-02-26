@@ -235,3 +235,33 @@ font-weight: bold;
     opacity: 0.5;
 }
 
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: #151515;
+
+}
+
+.toggle-ball.active{
+    background-color: #fff;
+    transform: translateX(-20px);
+
+}
