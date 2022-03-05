@@ -86,6 +86,7 @@ font-weight: bold;
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 1s ease all;
 }
 
 .sidebar{
@@ -265,3 +266,11 @@ font-weight: bold;
     transform: translateX(-20px);
 
 }
+
+@media only screen and (max-width : 940px){
+    .menu-container{
+        display: none;
+    }
+}
+
+

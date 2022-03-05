@@ -6,8 +6,9 @@ arrows.forEach((arrow, i) => {
     let clickCounter = 0;
 
     arrow.addEventListener('click', () => {
+        const ratio = Math.floor(window.innerWidth / 270);
         clickCounter++;
-        if (itemNumber - (4 + clickCounter) >= 0) {
+        if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
             movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get('transform')[0].x.value - 300
                 }px)`;
         } else {
@@ -15,8 +16,11 @@ arrows.forEach((arrow, i) => {
             clickCounter = 0;
         }
     });
-    console.log(movieLists[i].querySelectorAll('img').length);
 })
+
+
+
+//TOGGLE 
 
 const ball = document.querySelector('.toggle-ball');
 const items = document.querySelectorAll('.container , .movie-list-title , .navbar-container, .sidebar,.left-menu-icon , .toggle');
